@@ -8,13 +8,13 @@
     <!-- form 要素 -->
     <form action="/user/register" method="POST">
       名前
-      <input name="name" placeholder="あなたの氏名" required><br>
+      <input type="text" name="name" placeholder="あなたの氏名" required><br>
       誕生日
       <input type="date" name="birthday"><br>
       性別
-      <label><input type="radio" name="gender" value="1">女性</label>
-      <label><input type="radio" name="gender" value="2">男性</label>
-      <label><input type="radio" name="gender" value="3" checked>その他</label>
+      <label><input type="radio" name="gender" value="女性">女性</label>
+      <label><input type="radio" name="gender" value="男性">男性</label>
+      <label><input type="radio" name="gender" value="その他" checked>その他</label>
       <br>
       <label><input type="checkbox" name="tos" value="1" required>利用規約を確認しました</label><br>
       <input type="hidden" name="token" value="abcdefg">
